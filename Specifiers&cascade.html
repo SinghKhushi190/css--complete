@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Cascade</title>
+    <style>
+        /* The specificity of the seclector is 1+10 = 11 */
+        .yellow {
+            color: yellow;
+         
+        }
+/* The specificity of the seclector is 10 */
+        /* .cred {
+            color: red;
+        } */
+   /* The specificity of the seclector is 10 */
+        .cpurple {
+            color: purple  !important;
+        }
+
+        /* this is a style attributes */
+        
+    /* [data-x=a]{ */
+           /* background-color: maroon; */ 
+/* }
+
+/* The specificity of the seclector is 10 */
+        .cred {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: blue;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>

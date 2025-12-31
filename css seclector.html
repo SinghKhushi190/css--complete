@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css seclector</title>
+    <style>
+        /* Element selector  */
+        div {
+            background-color: blanchedalmond;
+        }
+
+        /* class seclector */
+        .red {
+            background-color: red;
+
+            /* id selector */
+            #green {
+                background-color: green;
+            }
+        }
+
+        /* child seclector */
+        div>p {
+            color-scheme: blue;
+            background-color: rgb(0, 255, 68);
+        }
+
+        /* when Element seclector are not same then we are not using child seclctor */
+
+        /* When we want Element got select in any Element selctor we are using Descendent selector */
+
+        /* div p{
+            color-scheme: blue;
+            background-color: rgb(red, green, blue);
+         } */
+        /* 
+          Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo Seclector */
+        a:visited {
+            color: yellow;
+        }
+
+        a:link {
+            color: cadetblue;
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        a:hover {
+            background-color: aquamarine;
+        }
+
+        p:first -child {
+            background-color: rgb(127, 27, 149);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">i am good</div>
+    <div>
+        I am another div
+        <p>I am a para inside div</p>
+    </div>
+
+    <div id="green">
+        I am another person
+    </div>
+    <div>
+        <a href="https://www.google.com">go to google</a>
+        <a href="https://www.facebook.com">go to facebook</a>
+    </div>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+  h1 {
+            background-color: azure;
+            color-scheme: black;
+        }
+
+.my-class{
+  color: blue;
+  font-size: 16px;
+ background-color: lightgray;
+}
+
+.another-class{
+  font-weight: bold;
+}
+
+span{
+  background-color: rgb(213, 132, 27);
+  color-scheme: red;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Flexbox</title>
+    <style>
+        .container {
+            border: 3px solid purple;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* when we using align-items its means we have one line element */
+            align-items: center;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* align-content: center; */
+            flex-wrap: wrap;
+            /* whenwhere we have multiple lines we are using align-content */
+            /* align-content: flex-start; */
+            /* there is no justify-items in Flexbox */
+            flex-flow: row wrap;
+            /* row-gap: 30px;
+        column-gap: 10px; */
+            gap: 40px 10px;
+        }
+
+        .item {
+            flex-grow: 1;
+            height: 76px;
+            width: 76px;
+            border: 3px solid black;
+            /* margin: 4px; */
+            background-color: brown;
+            align-self: flex-start;
+        }
+
+        /* .order-1{
+            order: 1;
+        }
+
+    .order-1{
+            order: 2;
+        }
+        .order-1{
+            order: 3;
+        } */
+        .item1 {
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <!-- <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div> -->
+            <!-- <div class="item" order-1>66</div>
+               <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+               <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+               <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div> -->
+        </div>
+    </main>
+</body>
+
+</html>
